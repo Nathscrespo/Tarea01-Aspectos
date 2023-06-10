@@ -50,7 +50,6 @@ public class Principal extends JFrame{
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	                getContentPane().setBackground(Color.RED);
-	                System.out.println("Nuevo color de fondo: Rojo");
 	            }
 	        });
 			
@@ -58,7 +57,6 @@ public class Principal extends JFrame{
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	                getContentPane().setBackground(Color.BLUE);
-	                System.out.println("Nuevo color de fondo: Azul");
 	            }
 	        });
 			
@@ -66,7 +64,6 @@ public class Principal extends JFrame{
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	                getContentPane().setBackground(Color.GREEN);
-	                System.out.println("Nuevo color de fondo: Verde");
 	            }
 	        });
 			

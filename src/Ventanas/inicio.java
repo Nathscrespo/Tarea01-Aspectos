@@ -1,7 +1,4 @@
-package main;
-
-
-import Ventanas.Principal;
+package Ventanas;
 
 public class inicio {
 	public static void main (String[] args) {
