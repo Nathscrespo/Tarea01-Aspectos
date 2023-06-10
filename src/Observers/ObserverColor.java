@@ -1,4 +1,9 @@
 package Observers;
+import java.awt.Color;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 
 import java.awt.Color;
 
@@ -18,8 +23,6 @@ public aspect ObserverColor {
 	    @AfterReturning (pointcut = "colorChange(color)", returning = "color")
 	    public void afterColorChange(JoinPoint joinPoint, Color color) {
 	        System.out.println("Nuevo color de fondo: " + color.toString());
-
-	    }
 	    
 }
 
