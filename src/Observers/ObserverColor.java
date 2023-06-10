@@ -3,7 +3,7 @@ package Observers;
 import java.awt.Color;
 
 
-
+@Aspect
 public aspect ObserverColor {  
 	
 //		pointcut colorChange(): execution(void javafx.scene.Parent.setStyle(String));
