@@ -5,6 +5,10 @@ import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 
+import java.awt.Color;
+
+
+
 public aspect ObserverColor {  
 	
 //		pointcut colorChange(): execution(void javafx.scene.Parent.setStyle(String));
@@ -19,8 +23,6 @@ public aspect ObserverColor {
 	    @AfterReturning (pointcut = "colorChange(color)", returning = "color")
 	    public void afterColorChange(JoinPoint joinPoint, Color color) {
 	        System.out.println("Nuevo color de fondo: " + color.toString());
-
-	    }
 	    
 }
 
