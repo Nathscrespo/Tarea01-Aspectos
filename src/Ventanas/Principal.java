@@ -1,11 +1,13 @@
 package Ventanas;
 
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -50,7 +52,6 @@ public class Principal extends JFrame{
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	                getContentPane().setBackground(Color.RED);
-	                System.out.println("Nuevo color de fondo: Rojo");
 	            }
 	        });
 			
@@ -58,7 +59,6 @@ public class Principal extends JFrame{
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	                getContentPane().setBackground(Color.BLUE);
-	                System.out.println("Nuevo color de fondo: Azul");
 	            }
 	        });
 			
@@ -66,7 +66,6 @@ public class Principal extends JFrame{
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	                getContentPane().setBackground(Color.GREEN);
-	                System.out.println("Nuevo color de fondo: Verde");
 	            }
 	        });
 			
